@@ -2,7 +2,7 @@ services:
   org-postgresql-db-01:
     container_name: org-postgresql-db-01
     restart: always
-    image: postgres:latest
+    image: postgres:15
     environment:
       POSTGRES_USER: ${DB_USER}
       POSTGRES_PASSWORD: ${DB_PASSWORD}
